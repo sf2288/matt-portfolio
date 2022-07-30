@@ -1,0 +1,19 @@
+.mainContainer {
+  position: relative;
+}
+@mixin name {
+  display: block;
+  position: absolute;
+  height: 100%;
+  width: 50%;
+  z-index: 1;
+}
+
+.left {
+  @include name;
+}
+
+.right {
+  @include name;
+  right: 0;
+}

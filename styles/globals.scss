@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Oswald:wght@400;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background: #fff;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: normal;
+  font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.content-container {
+  max-width: 1275px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 10;
+}
+
+// @layer base {
+//   body {
+//     @apply text-primary-light-500 dark:bg-primary-dark-500;
+//   }
+// }
