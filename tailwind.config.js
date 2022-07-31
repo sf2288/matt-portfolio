@@ -45,7 +45,10 @@ module.exports = {
         "secondary-light-icon": "#c6c6c6",
         "secondary-light-icon-hover": "#e0a707",
       },
-      spacing: { container: "4.375rem 4.6rem 1.6625rem" },
+      spacing: {
+        container: "4.375rem 4.6rem 1.6625rem",
+        "b-container": "2.7125rem",
+      },
       width: {
         25: "25%",
         30: "30%",

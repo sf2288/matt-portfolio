@@ -24,7 +24,9 @@ export default function IntroComponent() {
         </MotionDiv>
       </div>
       <div className="bg-white dark:bg-primary-dark-200 w-70 p-container h-screen md:flex-grow flex justify-center flex-col">
-        <NameComponent />
+        <div className="flex flex-grow justify-center flex-col mt-[2.4rem] mb-[1.75rem]">
+          <NameComponent />
+        </div>
         <MotionDiv duration={2} initialY={10} delay={1.7}>
           <div className="border-t-2 border-secondary-border-color dark:border-primary-border-color" />
         </MotionDiv>

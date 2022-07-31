@@ -22,7 +22,9 @@ export default function ContactComponent() {
         >
           <ContactDetailsComponent />
         </div>
-        <NameComponent />
+        <div className="flex flex-grow justify-center flex-col mt-[5rem]">
+          <NameComponent />
+        </div>
       </div>
     </Container>
   );

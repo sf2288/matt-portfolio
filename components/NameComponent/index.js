@@ -4,7 +4,7 @@ import { SocialIconsComponent } from "../SocialIconsComponent";
 
 export default function NameComponent({ showSubTitle = true }) {
   return (
-    <div className="flex flex-grow justify-center flex-col mt-[2.4rem] mb-[1.75rem]">
+    <>
       <h1 className="leading-custom text-custom-large text-secondary-light-text-500 dark:text-primary-dark-text-500 flex flex-col">
         <MotionDiv duration={1.1} initialY={10} delay={0.8}>
           <span className="font-light">{AppConfig?.first_name}</span>
@@ -26,6 +26,6 @@ export default function NameComponent({ showSubTitle = true }) {
         ) : null}
         <SocialIconsComponent />
       </div>
-    </div>
+    </>
   );
 }

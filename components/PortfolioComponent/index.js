@@ -16,7 +16,7 @@ export default function PortfolioComponent() {
           showSubTitle={portfolio?.showSubTitle}
         />
       </div>
-      <div className="w-70 p-container md:flex-grow bg-white dark:bg-primary-dark-200 ">
+      <div className="w-70 p-container md:flex-grow bg-white dark:bg-primary-dark-200">
         <div className="flex flex-wrap mb-5 text-secondary-light-text-300 dark:text-primary-dark-text-300">
           {portfolio?.data && portfolio?.data.length
             ? portfolio?.data.map((item, index) => {
@@ -26,7 +26,7 @@ export default function PortfolioComponent() {
                     key={index + 1}
                     className="mb-5 grid grid-flow-col pr-5 gap-4 w-6/12"
                   >
-                    <div className="group relative w-full h-64 cursor-pointer">
+                    <div className="group relative w-full h-60 cursor-pointer">
                       <Image
                         className="object-cover transition absolute duration-1000 ease-out group-hover:scale-105"
                         src={item?.thumbnail}
@@ -41,7 +41,9 @@ export default function PortfolioComponent() {
                         passHref
                       >
                         <a className="absolute inset-0 top-0 p-5 left-0 w-full h-full flex flex-col opacity-0 group-hover:h-full group-hover:opacity-60 duration-300 text-primary-dark-500 dark:text-white ease-out hover:bg-white dark:group-hover:bg-primary-dark-200">
-                          <h3 className="font-medium">{item?.title}</h3>
+                          <h3 className="font-medium text-[1.2rem]">
+                            {item?.title}
+                          </h3>
                           <div
                             className="transition transform ease-in-out  border-2 group-hover:border-primary-dark-200 dark:group-hover:border-secondary-light-500 
                           w-0 group-hover:w-16 my-3"

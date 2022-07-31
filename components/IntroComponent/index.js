@@ -13,13 +13,9 @@ export default function IntroComponent() {
           showSubTitle={intro?.showSubTitle}
         />
       </div>
-      <div className="w-70 font-normal text-lg p-container md:flex-grow bg-secondary-light-200 dark:bg-primary-dark-300 flex  flex-col ">
-        <div className="grid grid-flow-col gap-4 ">
-          <div className="inline-grid gap-4 ">
-            <div className="w-100 mb-5 text-secondary-light-text-300 dark:text-primary-dark-text-300 ">
-              {intro?.description()}
-            </div>
-          </div>
+      <div className="w-70 font-normal text-lg p-container md:flex-grow bg-secondary-light-200 dark:bg-primary-dark-300">
+        <div className="text-secondary-light-text-300 dark:text-primary-dark-text-300 pb-b-container">
+          {intro?.description()}
         </div>
       </div>
     </Container>
