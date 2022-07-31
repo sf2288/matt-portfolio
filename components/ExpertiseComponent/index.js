@@ -6,14 +6,14 @@ export default function ExpertiseComponent() {
   const expertise = AppConfig?.expertise;
   return (
     <Container>
-      <div className="bg-secondary-light-300 dark:bg-primary-dark-300 w-30 p-container md:mb-0 mb-6 flex-shrink-0 text-right">
+      <div className="bg-secondary-light-300 dark:bg-primary-dark-300 w-30 container-padding lg:mb-0 mb-6 flex-shrink-0 text-right">
         <LeftContainer
           title={expertise?.title}
           subTitle={expertise?.subTitle}
           showSubTitle={expertise?.showSubTitle}
         />
       </div>
-      <div className="w-70 font-normal text-lg p-container md:flex-grow bg-white dark:bg-primary-dark-200">
+      <div className="w-70 font-normal text-lg container-padding lg:flex-grow bg-white dark:bg-primary-dark-200">
         <div className="flex flex-wrap text-secondary-light-text-300 dark:text-primary-dark-text-300 pb-b-container">
           {expertise?.data && expertise?.data.length
             ? expertise?.data.map((item, index) => (

@@ -4,7 +4,7 @@ import { MotionDiv } from "../Common/MotionDiv";
 export const ContactDetailsComponent = () => (
   <>
     <MotionDiv duration={2.2} initialY={0} delay={1.8}>
-      <div className="flex flex-col">
+      <div className="flex flex-col md:text-start text-center md:mb-0 mb-7">
         <span className="text-secondary-light-text-500 dark:text-primary-dark-text-500 font-bold text-sm mb-3">
           Location
         </span>
@@ -14,7 +14,7 @@ export const ContactDetailsComponent = () => (
       </div>
     </MotionDiv>
     <MotionDiv duration={2.3} initialY={0} delay={2.1}>
-      <div className="flex flex-col">
+      <div className="flex flex-col md:text-start text-center md:mb-0 mb-7">
         <span className="text-secondary-light-text-500 dark:text-primary-dark-text-500 font-bold text-sm mb-3">
           Phone
         </span>
@@ -29,7 +29,7 @@ export const ContactDetailsComponent = () => (
       </div>
     </MotionDiv>
     <MotionDiv duration={2.4} initialY={0} delay={2.3}>
-      <div className="flex flex-col">
+      <div className="flex flex-col md:text-start text-center md:mb-0 mb-7">
         <span className="text-secondary-light-text-500 dark:text-primary-dark-text-500 font-bold text-sm mb-3">
           Web
         </span>
@@ -44,7 +44,7 @@ export const ContactDetailsComponent = () => (
       </div>
     </MotionDiv>
     <MotionDiv duration={2.5} initialY={0} delay={2.4}>
-      <div className="flex flex-col">
+      <div className="flex flex-col md:text-start text-center md:mb-0 mb-7">
         <span className="text-secondary-light-text-500 dark:text-primary-dark-text-500 font-bold text-sm mb-3">
           Email
         </span>

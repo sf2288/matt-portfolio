@@ -1,17 +1,27 @@
 /** @type {import('tailwindcss').Config} */
+const defaultTheme = require("tailwindcss/defaultTheme");
 module.exports = {
   mode: "jit",
   content: ["./pages/**/*.{js,jsx}", "./components/**/*.{js,jsx}"],
   darkMode: "class", // or 'media' or 'class'
   theme: {
     extend: {
-      lineHeight: { custom: "61.152px", "line-height": 1.45 },
+      screens: {
+        // md: "1023px",
+      },
+      lineHeight: {
+        custom: "61.152px",
+        "line-height": 1.45,
+        "line-height-medium": 0.91,
+      },
       fontFamily: {
         sans: ["Lato", "sans-serif"],
         heading: ["Oswald", "sans-serif"],
       },
       fontSize: {
-        "custom-large": " 67.2px",
+        "custom-large": "67.2px",
+        "custom-medium": "43.68px",
+        "custom-smallest": "13.65px",
         "title-size": "16.8px",
         "discription-text-size": "0.9rem",
       },
@@ -46,7 +56,9 @@ module.exports = {
         "secondary-light-icon-hover": "#e0a707",
       },
       spacing: {
-        container: "4.375rem 4.6rem 1.6625rem",
+        container: "4.375rem 5.25rem 1.6625rem",
+        "md-container": "3.15rem",
+        "sm-container": "1.75rem",
         "b-container": "2.7125rem",
       },
       width: {

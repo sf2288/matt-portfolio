@@ -21,7 +21,7 @@ export const ThemeToggler = () => {
       >*/}
       <button
         aria-label="theme-toggler"
-        className="rounded absolute transition top-2 right-0 p-[5px] ring-1 hover:ring-1 bg-transparent 
+        className="rounded absolute transition top-2 right-0 p-[5px] ring-1 hover:ring-1 dark:bg-primary-dark-300 bg-secondary-light-500
         ring-secondary-light-icon-bg hover:ring-secondary-light-icon 
         text-secondary-light-text-500 dark:text-primary-dark-text-500
          dark:ring-primary-dark-icon-bg dark:hover:ring-primary-dark-icon"

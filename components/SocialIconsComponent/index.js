@@ -8,7 +8,7 @@ import { TwitterIcon } from "../SVG/TwitterIcon";
 export const SocialIconsComponent = () => {
   const social = AppConfig?.social;
   return (
-    <div className="flex items-center">
+    <div className="flex items-center lg:mt-0 mt-7">
       {social?.github?.enabled ? (
         <IconsWrapperComponent
           href={social?.github?.url}

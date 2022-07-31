@@ -6,14 +6,14 @@ export default function IntroComponent() {
   const intro = AppConfig?.intro;
   return (
     <Container even>
-      <div className="bg-secondary-light-500 dark:bg-primary-dark-500 w-30 p-container md:mb-0 mb-6 flex-shrink-0 text-right">
+      <div className="md:bg-secondary-light-500 md:dark:bg-primary-dark-500 bg-container lg:w-30 w-full container-padding lg:text-right container-border-top">
         <LeftContainer
           title={intro?.title}
           subTitle={intro?.subTitle}
           showSubTitle={intro?.showSubTitle}
         />
       </div>
-      <div className="w-70 font-normal text-lg p-container md:flex-grow bg-secondary-light-200 dark:bg-primary-dark-300">
+      <div className="lg:w-70 w-full font-normal text-lg container-padding bg-container container-border-top">
         <div className="text-secondary-light-text-300 dark:text-primary-dark-text-300 pb-b-container">
           {intro?.description()}
         </div>

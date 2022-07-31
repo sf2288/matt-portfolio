@@ -6,14 +6,14 @@ export default function ProfilLinkComponent() {
   const profileLinks = AppConfig?.profileLinks;
   return (
     <Container even>
-      <div className="bg-secondary-light-500 dark:bg-primary-dark-500 w-30 p-container md:mb-0 mb-6 flex-shrink-0 text-right">
+      <div className="bg-secondary-light-500 dark:bg-primary-dark-500 w-30 container-padding lg:mb-0 mb-6 flex-shrink-0 text-right">
         <LeftContainer
           title={profileLinks?.title}
           subTitle={profileLinks?.subTitle}
           showSubTitle={profileLinks?.showSubTitle}
         />
       </div>
-      <div className="w-70 font-normal text-lg p-container md:flex-grow bg-secondary-light-200 dark:bg-primary-dark-300">
+      <div className="w-70 font-normal text-lg container-padding lg:flex-grow bg-secondary-light-200 dark:bg-primary-dark-300">
         <div className="flex flex-wrap text-secondary-light-text-300 dark:text-primary-dark-text-300 pb-b-container">
           {profileLinks?.links && profileLinks?.links.length
             ? profileLinks?.links.map((item, index) => (

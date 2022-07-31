@@ -9,14 +9,14 @@ export default function PortfolioComponent() {
   const portfolio = AppConfig?.portfolio;
   return (
     <Container>
-      <div className="bg-secondary-light-300 dark:bg-primary-dark-300 w-30 p-container md:mb-0 mb-6 flex-shrink-0 text-right">
+      <div className="bg-secondary-light-300 dark:bg-primary-dark-300 w-30 container-padding lg:mb-0 mb-6 flex-shrink-0 text-right">
         <LeftContainer
           title={portfolio?.title}
           subTitle={portfolio?.subTitle}
           showSubTitle={portfolio?.showSubTitle}
         />
       </div>
-      <div className="w-70 p-container md:flex-grow bg-white dark:bg-primary-dark-200">
+      <div className="w-70 container-padding lg:flex-grow bg-white dark:bg-primary-dark-200">
         <div className="flex flex-wrap mb-5 text-secondary-light-text-300 dark:text-primary-dark-text-300">
           {portfolio?.data && portfolio?.data.length
             ? portfolio?.data.map((item, index) => {

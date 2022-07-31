@@ -19,6 +19,18 @@ body {
   z-index: 10;
 }
 
+.container-padding {
+  @apply lg:p-container md:p-md-container p-sm-container;
+}
+
+.container-border-top {
+  @apply border-t-[1px] border-t-secondary-border-color dark:border-t-primary-border-color lg:border-0;
+}
+
+.bg-container {
+  @apply lg:bg-secondary-light-200 bg-white lg:dark:bg-primary-dark-300 dark:bg-primary-dark-200;
+}
+
 // @layer base {
 //   body {
 //     @apply text-primary-light-500 dark:bg-primary-dark-500;
