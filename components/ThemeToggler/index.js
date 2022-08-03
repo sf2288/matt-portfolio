@@ -15,13 +15,9 @@ export const ThemeToggler = () => {
 
   return (
     <div className="container m-auto sticky top-0 z-50">
-      {/* <button
-        className="rounded-md absolute top-2 right-0 p-2 hover:ring-2 dark:hover:ring-secondary-light-300 hover:ring-primary-dark-300 flex items-center justify-center "
-        onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-      >*/}
       <button
         aria-label="theme-toggler"
-        className="rounded absolute transition top-2 right-0 p-[5px] ring-1 hover:ring-1 dark:bg-primary-dark-300 bg-secondary-light-500
+        className="rounded absolute transition lg:top-8 right-8 top-8 lg:right-8 p-[8px] ring-1 hover:ring-1 dark:bg-primary-dark-300 bg-secondary-light-500
         ring-secondary-light-icon-bg hover:ring-secondary-light-icon 
         text-secondary-light-text-500 dark:text-primary-dark-text-500
          dark:ring-primary-dark-icon-bg dark:hover:ring-primary-dark-icon"

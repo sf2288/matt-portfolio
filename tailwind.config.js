@@ -23,7 +23,9 @@ module.exports = {
         "custom-medium": "43.68px",
         "custom-smallest": "13.65px",
         "title-size": "16.8px",
-        "discription-text-size": "0.9rem",
+        "discription-text-size": "1rem",
+        "experience-text-smallest-size": "0.7rem",
+        "experience-text-smaller-size": "0.75rem",
       },
       colors: {
         "primary-dark-500": "#292a2a",
@@ -54,12 +56,24 @@ module.exports = {
         "secondary-light-icon-hover-bg": "transparent",
         "secondary-light-icon": "#c6c6c6",
         "secondary-light-icon-hover": "#e0a707",
+
+        "md-secondary": "#fafafa",
+        "md-primary": "#282929",
       },
       spacing: {
-        container: "4.375rem 5.25rem 1.6625rem",
-        "md-container": "3.15rem",
+        container: "4.375rem 4.8rem 1.6625rem",
+        "profile-container": "2.625rem 4.8rem 1.6625rem",
+        "md-container": "3.15rem 3.5rem 1.4rem",
         "sm-container": "1.75rem",
         "b-container": "2.7125rem",
+        "no-t-inner-top": "4.375rem",
+        "no-t-container": "0 4.8rem 1.6625rem",
+        "sm-no-t-container": "0 3.5rem 1.4rem",
+        "xs-no-t-container": "0 1.75rem 1.75rem",
+
+        "no-b-container": "4.375rem 4.8rem 0",
+        "sm-no-b-container": "3.15rem 3.5rem 0",
+        "xs-no-b-container": "1.75rem 1.75rem 0rem",
       },
       width: {
         25: "25%",

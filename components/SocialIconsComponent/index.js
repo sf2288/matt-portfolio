@@ -8,7 +8,7 @@ import { TwitterIcon } from "../SVG/TwitterIcon";
 export const SocialIconsComponent = () => {
   const social = AppConfig?.social;
   return (
-    <div className="flex items-center lg:mt-0 mt-7">
+    <div className="flex items-center lg:mt-0 mt-7 lg:absolute lg:bottom-0 lg:right-0">
       {social?.github?.enabled ? (
         <IconsWrapperComponent
           href={social?.github?.url}
@@ -59,13 +59,13 @@ const IconsWrapperComponent = ({ href, ariaLabel, icon, duration, delay }) => {
           aria-label={ariaLabel}
           target="_blank"
           rel="noreferrer"
-          className="p-[7px] ml-[6px] rounded border-2 transition delay-100
+          className="p-[7px] ml-[6px] rounded-[3px] border-2 border-solid w-[33px] h-[33px] xl:w-[38px] xl:h-[38px] text-[1rem] 
       border-secondary-light-icon-bg bg-secondary-light-icon-bg text-secondary-light-icon 
       dark:border-primary-dark-icon-bg dark:bg-primary-dark-icon-bg dark:text-primary-dark-icon 
       hover:text-secondary-light-icon-hover
       hover:dark:text-primary-dark-text-orange hover:bg-transparent hover:dark:bg-transparent"
         >
-          <Icon className="w-5 h-5" />
+          <Icon className="xl:w-5 xl:h-5 w-4 h-4" />
         </a>
       </div>
     </MotionDiv>

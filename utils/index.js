@@ -1,8 +1,8 @@
 import { FacebookIcon } from "../components/SVG/FacebookIcon";
 
 export const AppConfig = {
-  first_name: "matt",
-  last_name: "Masteller",
+  first_name: "desmond",
+  last_name: "RAMBOWSKI",
   profilePic: "/matt.jpg",
   subTitle: "Web Developer & Front-end Expert",
   locale: "en",
@@ -100,6 +100,68 @@ export const AppConfig = {
       },
     ],
   },
+  experience: {
+    title: "EXPERIENCE",
+    subTitle: "Yes. I've benn around.",
+    showSubTitle: true,
+    data: [
+      {
+        date: "2015 – Present",
+        title: "UNICORN INCUBATOR INC",
+        designation: "Senior Interface Designer",
+        city: "Portland, OR",
+        description:
+          "Consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aaliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti.",
+      },
+      {
+        date: "2013 – 2015",
+        title: "CALIFORNIA DESIGN BUREAU",
+        designation: "Creative Director",
+        city: "Cupertino, CA",
+        description:
+          "Consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aaliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti.",
+      },
+      {
+        date: "2010 – 2013",
+        title: "DREAMLAND CREATIVE",
+        designation: "Senior Interface Designer",
+        city: "Front-end Designer",
+        description:
+          "Consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aaliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti.",
+      },
+    ],
+  },
+  education: {
+    title: "EDUCATION",
+    subTitle: "Lazy isn't in my vocabulary.",
+    showSubTitle: true,
+    data: [
+      {
+        date: "2008 – 2010",
+        title: "WEBSTER TECH UNIVERSITY",
+        designation: "Master of Computer Science",
+        city: "Portland, OR",
+        description:
+          "Consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aaliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti.",
+      },
+      {
+        date: "2003 – 2008",
+        title: "NINSEI UNIVERSITY",
+        designation: "Bachelor of Computer Science",
+        city: "Tokyo, Japan",
+        description:
+          "Consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aaliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti.",
+      },
+      {
+        date: "2000 – 2003",
+        title: "ACADEMY OF FINE ARTS",
+        designation: "Master of Arts",
+        city: "Berlin, Germany",
+        description:
+          "Consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aaliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti.",
+      },
+    ],
+  },
   profileLinks: {
     title: "PROFILES",
     subTitle: "Busy as usual.",
@@ -108,32 +170,32 @@ export const AppConfig = {
       {
         icon: <FacebookIcon />,
         title: "THEMFOREST",
-        description: "An overview of the themes and templates that I sell",
+        description: "An overview of the themes and templates that I sell.",
       },
       {
         icon: <FacebookIcon />,
         title: "GITHUB",
-        description: "An overview of the themes and templates that I sell",
+        description: "All my open source projects for you analyze.",
       },
       {
         icon: <FacebookIcon />,
         title: "MEDIUM",
-        description: "An overview of the themes and templates that I sell",
+        description: "Yes. I'm also a blogger and here you find my writings.",
       },
       {
         icon: <FacebookIcon />,
         title: "THEMFOREST",
-        description: "An overview of the themes and templates that I sell",
+        description: "An overview of the themes and templates that I sell.",
       },
       {
         icon: <FacebookIcon />,
         title: "GITHUB",
-        description: "An overview of the themes and templates that I sell",
+        description: "All my open source projects for you analyze.",
       },
       {
         icon: <FacebookIcon />,
         title: "MEDIUM",
-        description: "An overview of the themes and templates that I sell",
+        description: "Yes. I'm also a blogger and here you find my writings.",
       },
     ],
   },

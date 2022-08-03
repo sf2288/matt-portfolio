@@ -4,19 +4,18 @@ import { AppConfig } from "../../utils";
 import { Routes } from "../../utils/routes";
 import { Container } from "../Common/Container";
 import { LeftContainer } from "../Common/LeftContainer";
+import { RightContainer } from "../Common/RightContainer";
 
 export default function PortfolioComponent() {
   const portfolio = AppConfig?.portfolio;
   return (
     <Container>
-      <div className="bg-secondary-light-300 dark:bg-primary-dark-300 w-30 container-padding lg:mb-0 mb-6 flex-shrink-0 text-right">
-        <LeftContainer
-          title={portfolio?.title}
-          subTitle={portfolio?.subTitle}
-          showSubTitle={portfolio?.showSubTitle}
-        />
-      </div>
-      <div className="w-70 container-padding lg:flex-grow bg-white dark:bg-primary-dark-200">
+      <LeftContainer
+        title={portfolio?.title}
+        subTitle={portfolio?.subTitle}
+        showSubTitle={portfolio?.showSubTitle}
+      />
+      <RightContainer>
         <div className="flex flex-wrap mb-5 text-secondary-light-text-300 dark:text-primary-dark-text-300">
           {portfolio?.data && portfolio?.data.length
             ? portfolio?.data.map((item, index) => {
@@ -24,9 +23,9 @@ export default function PortfolioComponent() {
                 return (
                   <div
                     key={index + 1}
-                    className="mb-5 grid grid-flow-col pr-5 gap-4 w-6/12"
+                    className="mb-6 grid grid-flow-col sm:pr-6 pr-0 gap-4 sm:w-6/12 w-full"
                   >
-                    <div className="group relative w-full h-60 cursor-pointer">
+                    <div className="group relative w-full md:h-64 h-72 cursor-pointer">
                       <Image
                         className="object-cover transition absolute duration-1000 ease-out group-hover:scale-105"
                         src={item?.thumbnail}
@@ -57,7 +56,7 @@ export default function PortfolioComponent() {
               })
             : null}
         </div>
-      </div>
+      </RightContainer>
     </Container>
   );
 }
