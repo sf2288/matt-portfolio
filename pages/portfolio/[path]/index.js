@@ -1,20 +1,41 @@
+import React from "react";
+import PortfolioDetailsComponent from "../../../components/PortfolioDetailsComponent";
+import { Meta } from "../../../layout/Meta";
+import { Main } from "../../../templates/Main";
 import { AppConfig } from "../../../utils";
 
-export default function PortfolioDetailsComponent({ name }) {
+export default function PortfolioDetailsPage({ portfolio }) {
   return (
-    <div className="text-black container m-auto pt-52">
-      Portfolio Name:
-      <h1 className="text-[40px] font-bold">{name}</h1>
-    </div>
+    <Main
+      meta={
+        <Meta
+          title={`${portfolio?.title} | ${AppConfig?.first_name} ${AppConfig?.last_name} | ${AppConfig?.subTitle}`}
+          description={portfolio?.description}
+        />
+      }
+    >
+      <PortfolioDetailsComponent portfolio={portfolio} />
+    </Main>
   );
 }
 
-export const getServerSideProps = ctx => {
-  const { path } = ctx?.query;
+export async function getStaticPaths() {
+  const apiDataPaths = AppConfig?.portfolio?.data;
+  const newPaths = [];
+  for (let path of apiDataPaths) {
+    newPaths.push({ params: { ...path } });
+  }
+  return {
+    paths: newPaths,
+    fallback: false,
+  };
+}
 
-  const name =
-    AppConfig.portfolio.data.find(d => d?.path === path)?.title ||
-    "Invalid Portfolio!";
-
-  return { props: { name } };
-};
+export async function getStaticProps({ params }) {
+  const data = AppConfig?.portfolio?.data;
+  const portfolio =
+    data && data?.length ? data.find(d => d?.path === params?.path) : [];
+  return {
+    props: { portfolio },
+  };
+}

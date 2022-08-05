@@ -13,7 +13,7 @@ export const TimeLineItemComponent = ({ data, end }) => {
           <div className="flex flex-wrap mb-5">
             <div className="title-line-height grid grid-flow-col gap-4 md:w-5/12 w-full text-secondary-light-text-300 dark:text-primary-dark-text-300">
               <div>
-                <p className="text-experience-text-smallest-size font-medium opacity-60 lg:mt-[-7px] mt-[-3px]">
+                <p className="text-experience-text-smallest-size font-medium lg:mt-[-7px] mt-[-3px]">
                   {item?.date}
                 </p>
                 <h2 className="mt-2 md:mt-1 text-title-size leading-line-height font-bold text-secondary-light-text-500 dark:text-primary-dark-text-500">
@@ -22,7 +22,7 @@ export const TimeLineItemComponent = ({ data, end }) => {
                 <p className="mt-2 md:mt-1 text-experience-text-smaller-size text-secondary-light-text-500 dark:text-primary-dark-text-500">
                   {item?.designation}
                 </p>
-                <p className="mt-2 md:mt-1 text-experience-text-smallest-size font-medium opacity-60">
+                <p className="mt-2 md:mt-1 text-experience-text-smallest-size font-medium">
                   {item?.city}
                 </p>
               </div>

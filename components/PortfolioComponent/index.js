@@ -19,7 +19,6 @@ export default function PortfolioComponent() {
         <div className="flex flex-wrap mb-5 text-secondary-light-text-300 dark:text-primary-dark-text-300">
           {portfolio?.data && portfolio?.data.length
             ? portfolio?.data.map((item, index) => {
-                const image = item?.thumbnail;
                 return (
                   <div
                     key={index + 1}

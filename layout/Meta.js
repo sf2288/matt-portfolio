@@ -100,6 +100,27 @@ const Meta = props => {
           url: props.canonical,
           locale: AppConfig.locale,
           site_name: AppConfig.site_name,
+          type: "profile",
+          profile: {
+            firstName: AppConfig.first_name,
+            lastName: AppConfig.last_name,
+            gender: "male",
+          },
+          images: [
+            {
+              url: AppConfig?.profilePic,
+              width: 800,
+              height: 600,
+              alt: props.title,
+              type: "image/jpg",
+            },
+          ],
+          site_name: props.title,
+        }}
+        twitter={{
+          handle: "@handle",
+          site: "@site",
+          cardType: "summary_large_image",
         }}
       />
     </>
