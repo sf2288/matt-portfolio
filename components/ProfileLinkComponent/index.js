@@ -19,7 +19,7 @@ export default function ProfilLinkComponent() {
             ? profileLinks?.links.map((item, index) => (
                 <div
                   key={index + 1}
-                  className="pr-12 title-line-height grid grid-flow-col gap-4 lg:w-4/12 md:w-6/12 w-full xl:pb-11 pb-7 text-secondary-light-text-300 dark:text-primary-dark-text-300"
+                  className="md:pr-12 pr-0 title-line-height grid grid-flow-col gap-4 lg:w-4/12 md:w-6/12 w-12/12 xl:pb-11 pb-7 text-secondary-light-text-300 dark:text-primary-dark-text-300"
                 >
                   <div className="text-title-size font-bold text-secondary-light-text-orange dark:text-primary-dark-text-orange">
                     0{index + 1}

@@ -63,7 +63,7 @@ const IconsWrapperComponent = ({ href, ariaLabel, icon, duration, delay }) => {
       border-secondary-light-icon-bg bg-secondary-light-icon-bg text-secondary-light-icon 
       dark:border-primary-dark-icon-bg dark:bg-primary-dark-icon-bg dark:text-primary-dark-icon 
       hover:text-secondary-light-icon-hover
-      hover:dark:text-primary-dark-text-orange hover:bg-transparent hover:dark:bg-transparent"
+      hover:dark:text-primary-dark-text-orange hover:bg-transparent hover:dark:bg-transparent transition-all ease-linear duration-[.15s] delay-[0s]"
         >
           <Icon className="xl:w-5 xl:h-5 w-4 h-4" />
         </a>

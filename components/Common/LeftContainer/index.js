@@ -10,7 +10,7 @@ export const LeftContainer = ({ title, subTitle, showSubTitle, even }) => {
       } `}
     >
       <div className="relative flex flex-col">
-        <h2 className="text-title-size mb-2 leading-line-height font-bold text-secondary-light-text-300 dark:text-primary-dark-text-300">
+        <h2 className="uppercase text-title-size mb-2 leading-line-height font-bold text-secondary-light-text-300 dark:text-primary-dark-text-300">
           {title}
         </h2>
         {showSubTitle ? (

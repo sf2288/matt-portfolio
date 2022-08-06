@@ -206,6 +206,8 @@ export const AppConfig = {
     data: [
       {
         title: "UNICORN DEVELOPER -1",
+        subTitle:
+          "Building an app that connects likeminded students who need a roommate",
         description:
           "UFC Gym is the world leader in MMA-inspired fitness. With locations all over the world, they empower people to find their fit through unique classes and high-intensity workouts UFC Gym is the world leader in MMA-inspired fitness. With locations all over the world, they empower people to find their fit through unique classes and high-intensity workouts.",
         path: "unicorn-developer1",
@@ -219,6 +221,8 @@ export const AppConfig = {
       },
       {
         title: "UNICORN DEVELOPER-2",
+        subTitle:
+          "Building an app that connects likeminded students who need a roommate",
         description:
           "UFC Gym is the world leader in MMA-inspired fitness. With locations all over the world, they empower people to find their fit through unique classes and high-intensity workouts UFC Gym is the world leader in MMA-inspired fitness. With locations all over the world, they empower people to find their fit through unique classes and high-intensity workouts.",
         path: "unicorn-developer2",
@@ -232,6 +236,8 @@ export const AppConfig = {
       },
       {
         title: "UNICORN DEVELOPER-3",
+        subTitle:
+          "Building an app that connects likeminded students who need a roommate",
         description:
           "UFC Gym is the world leader in MMA-inspired fitness. With locations all over the world, they empower people to find their fit through unique classes and high-intensity workouts UFC Gym is the world leader in MMA-inspired fitness. With locations all over the world, they empower people to find their fit through unique classes and high-intensity workouts.",
         path: "unicorn-developer3",
@@ -245,6 +251,8 @@ export const AppConfig = {
       },
       {
         title: "UNICORN DEVELOPER",
+        subTitle:
+          "Building an app that connects likeminded students who need a roommate",
         description:
           "UFC Gym is the world leader in MMA-inspired fitness. With locations all over the world, they empower people to find their fit through unique classes and high-intensity workouts UFC Gym is the world leader in MMA-inspired fitness. With locations all over the world, they empower people to find their fit through unique classes and high-intensity workouts.",
         path: "unicorn-developer4",
@@ -258,6 +266,8 @@ export const AppConfig = {
       },
       {
         title: "UNICORN DEVELOPER",
+        subTitle:
+          "Building an app that connects likeminded students who need a roommate",
         description:
           "UFC Gym is the world leader in MMA-inspired fitness. With locations all over the world, they empower people to find their fit through unique classes and high-intensity workouts UFC Gym is the world leader in MMA-inspired fitness. With locations all over the world, they empower people to find their fit through unique classes and high-intensity workouts.",
         path: "unicorn-developer5",
@@ -271,6 +281,8 @@ export const AppConfig = {
       },
       {
         title: "UNICORN DEVELOPER",
+        subTitle:
+          "Building an app that connects likeminded students who need a roommate",
         description:
           "UFC Gym is the world leader in MMA-inspired fitness. With locations all over the world, they empower people to find their fit through unique classes and high-intensity workouts UFC Gym is the world leader in MMA-inspired fitness. With locations all over the world, they empower people to find their fit through unique classes and high-intensity workouts.",
         path: "unicorn-developer6",
@@ -281,6 +293,100 @@ export const AppConfig = {
           "/profile.png",
           "/profile.png",
         ],
+      },
+    ],
+  },
+  clients: {
+    title: "Clients",
+    subTitle: "Happy people.",
+    showSubTitle: true,
+    data: [
+      {
+        title: "BBC",
+        image: "/clients/bbc.png",
+        url: "https://example.com",
+      },
+      {
+        title: "Disney",
+        image: "/clients/disney.png",
+        url: "https://example.com",
+      },
+      {
+        title: "Github",
+        image: "/clients/github.png",
+        url: "https://example.com",
+      },
+      {
+        title: "Google",
+        image: "/clients/google.png",
+        url: "https://example.com",
+      },
+      {
+        title: "HTML5",
+        image: "/clients/html5.png",
+        url: "https://example.com",
+      },
+      {
+        title: "Kickstarter",
+        image: "/clients/kickstarter.png",
+        url: "https://example.com",
+      },
+      {
+        title: "Youtube",
+        image: "/clients/youtube.png",
+        url: "https://example.com",
+      },
+      {
+        title: "Vimeo",
+        image: "/clients/vimeo.png",
+        url: "https://example.com",
+      },
+    ],
+  },
+  techStack: {
+    title: "Tech Stack",
+    subTitle: "Technologies I've mastered.",
+    showSubTitle: true,
+    data: [
+      {
+        title: "BBC",
+        image: "/techstack/bbc.png",
+        url: "https://example.com",
+      },
+      {
+        title: "Disney",
+        image: "/techstack/disney.png",
+        url: "https://example.com",
+      },
+      {
+        title: "Github",
+        image: "/techstack/github.png",
+        url: "https://example.com",
+      },
+      {
+        title: "Google",
+        image: "/techstack/google.png",
+        url: "https://example.com",
+      },
+      {
+        title: "HTML5",
+        image: "/techstack/html5.png",
+        url: "https://example.com",
+      },
+      {
+        title: "Kickstarter",
+        image: "/techstack/kickstarter.png",
+        url: "https://example.com",
+      },
+      {
+        title: "Youtube",
+        image: "/techstack/youtube.png",
+        url: "https://example.com",
+      },
+      {
+        title: "Vimeo",
+        image: "/techstack/vimeo.png",
+        url: "https://example.com",
       },
     ],
   },

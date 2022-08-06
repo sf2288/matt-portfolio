@@ -63,7 +63,7 @@ module.exports = {
       spacing: {
         container: "4.375rem 4.8rem 1.6625rem",
         "profile-container": "2.625rem 4.8rem 1.6625rem",
-        "md-container": "3.15rem 3.5rem 1.4rem",
+        "md-container": "3.15rem 3.5rem",
         "sm-container": "1.75rem",
         "b-container": "2.7125rem",
         "no-t-inner-top": "4.375rem",
@@ -79,6 +79,8 @@ module.exports = {
         25: "25%",
         30: "30%",
         50: "50%",
+        60: "60%",
+        65: "65%",
         70: "70%",
         75: "75%",
       },

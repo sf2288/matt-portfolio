@@ -1,5 +1,6 @@
-import React from "react";
 import { useRouter } from "next/router";
+import React from "react";
+import { AppRoutes } from "../utils/routes";
 import { Header } from "./Header";
 
 export const Layout = ({ children }) => {
@@ -8,7 +9,7 @@ export const Layout = ({ children }) => {
 
   return (
     <div>
-      {asPath === "/" ? <Header /> : null}
+      {asPath === AppRoutes?.home ? <Header /> : null}
       {children}
     </div>
   );

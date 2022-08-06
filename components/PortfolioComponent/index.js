@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { AppConfig } from "../../utils";
-import { Routes } from "../../utils/routes";
+import { AppRoutes } from "../../utils/routes";
 import { Container } from "../Common/Container";
 import { LeftContainer } from "../Common/LeftContainer";
 import { RightContainer } from "../Common/RightContainer";
@@ -33,7 +33,7 @@ export default function PortfolioComponent() {
                       />
                       <Link
                         href={{
-                          pathname: Routes?.portfolioDetailsPage,
+                          pathname: AppRoutes?.portfolioDetailsPage,
                           query: { path: item?.path },
                         }}
                         passHref

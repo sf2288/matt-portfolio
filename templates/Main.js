@@ -1,5 +1,4 @@
-import { ReactNode } from "react";
-
+import React from "react";
 const Main = props => (
   <div className="w-full text-gray-700 antialiased">
     {props.meta}
